@@ -14,10 +14,10 @@ public class DrinkFactoryTest {
 	@Test
 	public void test() {
 		try {
-			Drink tea = DrinkFactory.create(Tea.class);
+			Drink tea = DrinkFactory.valueOf(Tea.class);
 			assertEquals(tea.getClass().getName(), Tea.class.getName());
 			
-			Drink coffee = DrinkFactory.create(Coffee.class);
+			Drink coffee = DrinkFactory.valueOf(Coffee.class);
 			assertEquals(coffee.getClass().getName(), Coffee.class.getName());
 			
 		} catch (InstantiationException | IllegalAccessException e) {
