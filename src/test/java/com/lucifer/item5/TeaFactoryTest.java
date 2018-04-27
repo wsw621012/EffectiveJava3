@@ -17,4 +17,9 @@ public class TeaFactoryTest {
 		assertEquals(tea.getClass().getName(), BlackTea.class.getName());
 	}
 
+	@Test
+	public void test_Kiosk() {
+		Tea tea = Kiosk.getTea(TeaType.OOLONG);
+		assertEquals(tea.getClass().getName(), OolongTea.class.getName());
+	}
 }
