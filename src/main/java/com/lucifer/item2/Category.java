@@ -18,7 +18,9 @@ public class Category {
 		private int cost = 10;
 		private int capacity = 350;
 		
-		public Builder(int id, String mark) {
+		
+		private Builder(int id, String mark) {
+		//public Builder(int id, String mark) {
 			this.id = id;
 			this.mark = mark;
 		}
@@ -41,6 +43,10 @@ public class Category {
 			this.capacity = val;
 			return this;
 		}
+	}
+	
+	public static Builder newBuilder(int id, String mark) {
+		return new Builder(id, mark);
 	}
 	
 	private Category(Builder builder) {

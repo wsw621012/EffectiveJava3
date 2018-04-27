@@ -10,11 +10,11 @@ public class BadCategory {
 	private int cost;
 	private int capacity;
 
-	public static class Builder {
+	public static class FakeBuilder {
 
 		private BadCategory category;
 		
-		public Builder() {
+		public FakeBuilder() {
 			category = new BadCategory();
 		}
 		
@@ -22,28 +22,28 @@ public class BadCategory {
 			return category;
 		}
 		
-		public Builder withCapacity(int capacity) {
-			category.setCapacity(capacity);
+		public FakeBuilder capacity(int val) {
+			category.setCapacity(val);
 			return this;
 		}
 		
-		public Builder withCost(int cost) {
-			category.setCost(cost);
+		public FakeBuilder cost(int val) {
+			category.setCost(val);
 			return this;
 		}
 		
-		public Builder withId(int id) {
-			category.setId(id);
+		public FakeBuilder id(int val) {
+			category.setId(val);
 			return this;
 		}
 		
-		public Builder withMark(String mark) {
-			category.setMark(mark);
+		public FakeBuilder mark(String val) {
+			category.setMark(val);
 			return this;
 		}
 		
-		public Builder withExpiration(LocalDate expiration) {
-			category.setExpiration(expiration);
+		public FakeBuilder expiration(LocalDate val) {
+			category.setExpiration(val);
 			return this;
 		}
 	}
