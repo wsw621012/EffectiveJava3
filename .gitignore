@@ -14,6 +14,7 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 .project
+.classpath
 
 # Java part
 # Compiled class file

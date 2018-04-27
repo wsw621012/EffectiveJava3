@@ -1,9 +1,14 @@
 # EffectiveJava3
 some example about effective java 3rd edition
 
-item1: Consider static factory methods instead of constructors.
+item 1: Consider static factory methods instead of constructors.
 
-item2: Consider a builder when faced with many constructor parameters.
+item 2: Consider a builder when faced with many constructor parameters.
 
-item3: Enforce the singleton property with a private constructor or an enum type.
+item 3: Enforce the singleton property with a private constructor or an enum type.
+
+item 4: Enforce noninstantiability with a private constructor.
+
+item 5: Prefer dependency injection to hardwiring resources.
+
 
