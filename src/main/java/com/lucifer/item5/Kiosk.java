@@ -5,7 +5,13 @@ import com.lucifer.item5.TeaFactory.TeaType;
 
 public class Kiosk {
 
-	public static Tea getTea(TeaType tt) {
-		return TeaFactory.create(tt);
+	private final TeaFactory factory;
+	
+	public Kiosk(TeaFactory factory) {
+		this.factory = factory;
+	}
+	
+	public Tea getTea(TeaType tt) {
+		return factory.create(tt);
 	}
 }
