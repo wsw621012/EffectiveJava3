@@ -2,11 +2,9 @@ package com.lucifer.exec;
 
 public abstract class BaseColumn {
 
-	private String name;
 	private Object value;
 	
-	protected BaseColumn(String name, Object value) {
-		this.name = name;
+	protected BaseColumn(Object value) {
 		this.value = value;
 	}
 	
@@ -18,8 +16,5 @@ public abstract class BaseColumn {
 		return this.value;
 	}
 
-	public String getName() {
-		return name;
-	}
-	
+	public abstract Class<?> columeType();
 }
