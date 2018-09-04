@@ -11,4 +11,12 @@ item 4: Enforce noninstantiability with a private constructor.
 
 item 5: Prefer dependency injection to hardwiring resources.
 
+item 6: Avoid creating unnecessary objects.
 
+item 7: Eliminate obsolete object references.
+
+item 8: Avoid finalizers and cleaners.
+
+item 9: Prefer try-with-resources to try-finally.
+
+item 10: Obey the general contract when overriding equals
